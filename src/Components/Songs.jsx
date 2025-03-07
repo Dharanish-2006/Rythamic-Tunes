@@ -152,14 +152,13 @@ function Songs() {
       item.genre.toLowerCase().includes(lowerCaseQuery)
     );
   });
-
-
     return (
-      <div style={{display:"flex", justifyContent:"flex-end"}}>
-      <div className="songs-container" style={{width:"1300px"}}>
-        <div className="container mx-auto p-3">
+      <div style={{display:"flex" }}>
+        <div style={{marginLeft:"150px"}}></div>
+      <div className="songs-container ml-20" style={{width:"1150px"}}>
+        <div className="container mx-auto p-3 ml-10">
           <h2 className="text-3xl font-semibold mb-4 text-center">Songs List</h2>
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-3 ">
             <InputGroup.Text id="search-icon">
               <FaSearch />
             </InputGroup.Text>

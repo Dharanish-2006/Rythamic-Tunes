@@ -19,7 +19,12 @@ const Sidebar = () => {
         </div>
         <hr/>
        <div>
-       <p style={{display:"flex",justifyContent:"center"}}> Your Library</p>
+        <li>
+          <Link to="/Playlist">
+          {/* <p style={{display:"flex",justifyContent:"center"}}> </p> */}
+          <p style={{paddingLeft:"10px"}}> <FaPlayCircle /> </p> <p style={{paddingLeft:"10px"}}>Your Library</p>
+          </Link>
+        </li>
         <li>
           <Link to="/favorities">
           <p style={{paddingLeft:"10px"}}> <FaHeart /> </p> <p style={{paddingLeft:"10px"}}>Favorites</p>
@@ -35,7 +40,7 @@ const Sidebar = () => {
         </div>
        
       </ul>
-      {/* <div class="vl"></div> */}
+      <div class="vl"></div>
     </nav>
   );
 };
